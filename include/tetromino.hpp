@@ -14,16 +14,16 @@ private:
 	std::pair<int, int> position;
 
 public:
-	Tetromino();
+	Tetromino(TetrominoType shape);
 
 	void rotateCW();
 	void rotateCCW();
 
-	bool isFilledAt(int row, int col);
+	bool isFilledAt(int row, int col) const;
 	std::array<std::array<CellState, 4>, 4> getShapeMatrix() const;
 	std::pair<int, int> getPosition() const;
 
-	void move(int dy, int dx);
+	void move(int dx, int dy);
 	void reset(TetrominoType newShape);
 
 };
