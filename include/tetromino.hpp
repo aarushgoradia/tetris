@@ -14,7 +14,7 @@ private:
 	std::pair<int, int> position;
 
 public:
-	Tetromino(TetrominoType shape);
+	explicit Tetromino(TetrominoType shape);
 
 	void rotateCW();
 	void rotateCCW();
