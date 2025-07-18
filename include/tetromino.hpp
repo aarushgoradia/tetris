@@ -22,6 +22,7 @@ public:
 	bool isFilledAt(int row, int col) const;
 	std::array<std::array<CellState, 4>, 4> getShapeMatrix() const;
 	std::pair<int, int> getPosition() const;
+	void setPosition(int row, int col);
 
 	void move(int dx, int dy);
 	void reset(TetrominoType newShape);

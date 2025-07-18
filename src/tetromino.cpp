@@ -173,6 +173,9 @@ std::array<std::array<CellState, 4>, 4> Tetromino::getShapeMatrix() const {
 std::pair<int, int> Tetromino::getPosition() const {
 	return position;
 }
+void Tetromino::setPosition(int row, int col) {
+	position = { row, col };
+}
 
 void Tetromino::move(int dx, int dy) {
 	position.first += dy;
